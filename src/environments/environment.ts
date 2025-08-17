@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+    bastUrl : 'https://post-01-167d8-default-rtdb.asia-southeast1.firebasedatabase.app'
 };
 
 /*

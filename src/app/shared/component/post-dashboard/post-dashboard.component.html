@@ -1,0 +1,25 @@
+ <div class="row mt-4">
+    <div class="col-12 text-center">
+        <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" routerLink="/add">
+          <mat-icon>plus_one</mat-icon>
+        </button>
+    </div>
+ </div>
+
+
+<div class="container mt-4 post">
+    <div class="row">
+        <div class="col-6 offset-3">
+         <ng-container *ngIf="postInfom.length > 0 ; else nopost">
+               <app-post [getpost]="post" *ngFor="let post of postInfom"></app-post>
+
+         </ng-container>
+         <ng-template #nopost>
+            <p class="alert alert-danger">
+                Post Not Availabel !!
+            </p>
+
+         </ng-template>
+        </div>
+    </div>
+</div>

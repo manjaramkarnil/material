@@ -1,0 +1,15 @@
+.navbar-light .navbar-nav .nav-link {
+    color: orange;
+}
+
+.spinner{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255,.7);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
